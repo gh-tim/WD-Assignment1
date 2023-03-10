@@ -5,15 +5,24 @@
 body,
 html {
     height: 100%;
-    font-family: 'Gloock', serif;
+    font-family: 'Gloock', 'Times New Roman', serif;
     color: white;
-    background: linear-gradient(rgba(0,0,0,0.65),rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.38),rgba(0, 0, 0, 0) )no-repeat
-    ,url(images/kitchen.jpg)no-repeat;
+    background-color: #000000;
     background-size: cover;
     object-fit: cover;
     max-width: 100%;
     height: auto;
+    margin: 0;
   }
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.38),rgba(0, 0, 0, 0)), url("images/kitchen.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
 
 .header {
     background-color: #000000;
@@ -37,7 +46,7 @@ html {
 .texts {
     display: flex;
     flex-direction: column;
-    flex-basis: 40em;
+    flex-basis: 45em;
     align-items: center;
     justify-content: center;
     background-color: rgba(0,0,0, 0.7);
@@ -52,20 +61,22 @@ html {
 
 .sec-text {
     display: flex;
+    padding-top: 16px;
     font-size: 18px;
-    justify-content: center;
+    justify-items: center;
 }
 
 .sign-up {
+    display: inline-block;
     background-color: #A35E35;
     font-size: 16px;
     border-radius: 10px;
     border: none;
     padding: 15px 40px;
     color: #F9FAF8;
-    justify-content: center;
     margin-top: 10px;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .logo {
@@ -128,4 +139,44 @@ a {
   
 .header ul li:hover::after{
     width: 100%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 32px;
+    padding-bottom: 64px;
+}
+
+.title {
+    margin: 32px;
+    font-size: 36px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.food-con {
+    display: flex;
+    gap: 48px;
+    margin-left: 48px;
+    margin-right: 48px;
+    padding-top: 16px;
+}
+
+.food-con img {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
 }
