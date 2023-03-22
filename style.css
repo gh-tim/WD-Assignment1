@@ -17,11 +17,23 @@ html {
 
 .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.38),rgba(0, 0, 0, 0)), url("images/kitchen.jpg");
+}
+
+.about-hero {
+    background-image: url("images/marble.jpg");
+}
+
+.about-hero,
+.hero {
     height: 50%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    display: flex;
+    padding: 100px 150px;
+    gap: 100px;
+    justify-content: center;
 }
 
 .header {
@@ -34,13 +46,6 @@ html {
     margin: 0;
     justify-content: space-between;
     padding: 20px 100px;
-}
-
-.hero {
-    display: flex;
-    padding: 100px 150px;
-    gap: 100px;
-    justify-content: center;
 }
 
 .texts {
@@ -242,4 +247,65 @@ a {
 .epicurus {
     display: flex;
     justify-content: flex-end;
+}
+
+.jump,
+.about-texts {
+    border: 1px solid #ffffff;  
+}
+
+.jump,
+.about-texts {
+    flex-direction: column;
+    padding: 20px 40px;
+}
+
+.about-content {
+    display: flex;
+    margin: 120px 200px;
+    gap: 50px;
+}
+
+.jump {
+    display: flex;
+    flex-basis: 16rem;
+    flex-shrink: 0;
+    line-height: 6rem;
+    background-color: #5a5a5a;
+    border-radius: 5px;
+    max-height: fit-content;
+    font-size: 18px;
+}
+
+.jump li {
+    border-left: 2px solid #ffffff;
+    padding-left: 16px;
+}
+
+.about-texts {
+    display: flex;
+    flex-shrink: 1;
+}
+
+.about-main {
+    font-size: 36px;
+}
+
+.pic-group,
+.about-sec {
+    padding-bottom: 80px;
+    font-size: 18px;
+    line-height: 35px;
+}
+
+.pic-group img {
+    display: flex;
+    flex: auto;
+    width: 650px;
+    height: 400px;
+    border-radius: 5px;
+}
+
+.pic-group {
+    align-self: center;
 }
