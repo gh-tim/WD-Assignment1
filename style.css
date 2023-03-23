@@ -37,10 +37,6 @@ html {
 }
 
 .header {
-    background-color: #000000;
-}
-
-.header {
     display: flex;
     background-color: #000000;
     margin: 0;
@@ -68,7 +64,7 @@ html {
     display: flex;
     padding-top: 16px;
     font-size: 28px;
-    justify-items: center;
+    text-align: center;
 }
 
 .sign-up {
@@ -309,3 +305,96 @@ a {
 .pic-group {
     align-self: center;
 }
+
+.footer-title {
+    border-top: 5px #5a5a5a solid;
+    padding: 30px 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*recipes*/
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 2px;
+    gap: 0.2em;
+    width: 100%;
+    height: auto;
+    background-color: black;
+  }
+
+  .card {
+    background-color: black;
+    width: 280px;
+    height: 350px;
+    margin: 50px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 2px 4px white;
+  }
+  
+  .card-img {
+    height: 200px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+  }
+  
+  .food1 {
+    background-image: url('mcd.jpg');
+    height: 180px;
+  }
+
+  .food2 {
+    background-image: url('asianfood.jpg');
+  }
+
+  .food3 {
+    background-image: url('expensivefood.jpg');
+  }
+
+  .food4 {
+    background-image: url('panmee.jpg');
+    object-position: bottom;
+  }
+
+  .food5 {
+    background-image: url('nasilemak.jpg');
+    object-position: center;
+  }
+
+  .card-img {
+    width: 200px;
+    height: 240px;
+  }
+  
+  .card a {
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+    margin: 20px 15px;
+  }
+  
+  .card:hover {
+    background-color:#A35E35 ;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+  
+  }
+  
+  .card a:hover {
+    background-color: #A35E35;
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+  }
